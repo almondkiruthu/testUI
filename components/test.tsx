@@ -3,5 +3,8 @@
 import { Button } from './ui/button';
 
 export default function Test() {
-  return <Button className=''>Click me</Button>;
+  const print = () => {
+    console.log('Hello world');
+  };
+  return <Button onClick={print} className="">Click me</Button>;
 }
